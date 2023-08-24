@@ -3,9 +3,6 @@
     <title>Table Stuff</title>
 
     <style>
-        body{
-            text-align: center;
-        }
         table,td{
         border: 3px solid rgb(0, 0, 0);
         border-collapse: collapse;
@@ -25,54 +22,65 @@
             background-color:rgb(254, 254, 168);
             color:rgb(255, 0, 0);
         }
-        h1 {
-            color:rgb(56, 144, 123);
-
-        }
     </style>
 </head>
 <table style="width:50%; margin: 0 auto;">
     
    
     <tr>
-        <h1>Table Stuff</h1>
         <th  colspan= "2" style= "font-size:30px;"><b>Registration Form</b></th>
     </tr>
     <tr>
-        <td style="width: 35%">Enter Name</td>
-        <td>Kayle</td>
+        <td style="width: 35%"><b>Enter Name</b></td>
+        <td style="text-align: left;"><input type="text" size="20" maxlength="40" /></td>
         
     </tr>
     <tr>
-        <td>Enter Password</td>
-        <td>Blair</td>
+        <td><b>Enter Password</b></td>
+        <td style="text-align: left;"><input type="text" size="20" maxlength="40" /></td>
         
     </tr>
     <tr>
-        <td>Email Address</td>
-        <td>Adel</td>
+        <td ><b>Email Address</b></td>
+        <td style="text-align: left;"><textarea name="email-address" cols="20" rows="4"></textarea></td>
         
     </tr>
     <tr>
-        <td>Select Game</td>
-        <td>Krissy</td>
+        <td><b>Select Game</b></td>
+        <td style="text-align: left;">
+            <br><input type="checkbox" name="game" value="Hockey">Hockey
+            <br><input type="checkbox" name="game" value="Football">Football
+            <br><input type="checkbox" name="game" value="Football">Badminton
+            <br><input type="checkbox" name="game" value="Football">Cricket
+            <br><input type="checkbox" name="game" value="Football">Volleyball
+         </td>
         
     </tr>
     <tr>
-        <td>Gender</td>
-        <td>Krissy</td>
+        <td><b>Gender</b></td>
+        <td style="text-align: left;">
+            <input type="radio" name="game" value="Hockey">Male
+            <input type="radio" name="game" value="Hockey">Female
+        </td>
         
     </tr>
     <tr>
-        <td>Select ur age</td>
-        <td>Krissy</td>  
+        <td><b>Select ur age</b></td>
+        <td style="text-align: left;">
+                <input type="number" min="1" max="200" value="select">
+        </td>  
     </tr>
     <tr>
-        <td>Select Photo</td>
-        <td>Krissy</td> 
+        <td><b>Select Photo</b></td>
+        <td>
+            <input type="file" name="user-pic" />
+        </td> 
     </tr>
-    <tr>
-        <td>Lost Pizza</td>
-        <td>Krissy</td>
-    </tr>
+    <th colspan="2" style="background-color:rgb(39, 197, 255); color: black; text-align: left">
+        <button style="width: 33%; height: 40px;">Click Me</button>
+        <button style="width: 32%; height: 40px">Reset</button>
+        <button style="width: 33%; height: 40px">Submit Form</button>
+    </th>
+        
+     
 </table>
